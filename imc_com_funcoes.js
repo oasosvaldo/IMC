@@ -31,7 +31,7 @@ function main() {
     const imc = calcularImc(peso, altura)
     formImc.innerHTML = ''
     res.style.display = 'inline'
-    res.innerHTML = `<h1>Olá ${nome}</h1><h3>Você está ${classificarImc(imc)}</h3>`
+    res.innerHTML = `<h1>Olá ${nome}</h1><h3>Você está com ${peso}kg e sua altura é ${altura}.</br> Logo está${classificarImc(imc)}</h3>`
     btnInicio.style.display = 'inline'
 }
 
