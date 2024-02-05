@@ -1,5 +1,5 @@
 function foco() {
-    document.getElementById('peso').focus()
+    document.getElementById('nome').focus()
 }
 
 function calcularImc(peso, altura) {
@@ -22,6 +22,7 @@ function classificarImc(imc) {
 }
 
 function main() {
+    const nome = document.getElementById('nome').value
     const peso = document.getElementById('peso').value
     const altura = document.getElementById('altura').value
     let res = document.getElementById('res')
@@ -30,7 +31,7 @@ function main() {
     const imc = calcularImc(peso, altura)
     formImc.innerHTML = ''
     res.style.display = 'inline'
-    res.innerHTML = `Você está ${classificarImc(imc)}`
+    res.innerHTML = `<h1>Olá ${nome}</h1><h3>Você está ${classificarImc(imc)}</h3>`
     btnInicio.style.display = 'inline'
 }
 

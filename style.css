@@ -40,3 +40,17 @@ main {
 #btnInicio {
     display: none;
 }
+
+button {
+    background-color: #171747;
+    color: azure;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: azure;
+    color: #171747;
+}
